@@ -38,58 +38,6 @@ hr{
 	border-radius: 20px;
 }
 
-/*MEMBERS/////////////////////////////////////////////////////////*/
-.memberBoxImage {
-    position: relative;	
-}
-
-.memberBoxImage img{
-    position: absolute;
-    top:0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.memberImgFormal {
-    z-index: 1;
-}
-
-.memberImgInformal {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden; 
-}
-
-.memberBoxImage:hover .memberImgFormal {
-    visibility: hidden;
-}
-
-.memberBoxImage:hover .memberImgInformal {
-    visibility: visible;
-}
-
-.memberBoxDescription{
-    margin-top: 210px;
-    text-align: center;
-}
-
-.memberName{
-    font-weight: bold;
-}
-
-/*WHAT WE DO SECTION*/
-.whatwedoLogos{
-    margin-top:250px;
-}
-
-.whatwedoLogos img{
-	margin-top: 20px;
-    height: 60px;
-    width: 194x;
-}
 /*GIF INICIAL/////////////////////////////////////////////////////////*/
 .firstpage{
     height: 100vh;
@@ -107,6 +55,23 @@ hr{
     justify-content: center;
     align-content: center;
     padding-top: 50px;
+}
+
+/*REDES SOCIALES/////////////////////////////////////////////////////////*/
+.marco{
+	position: fixed;
+	z-index: 9;
+}
+
+.rrssbutton:hover img{
+	opacity: 0.8;	
+	transform: scale(1.1);
+}
+
+.rrssbutton img{
+	transition: all 0.1s;	
+	-moz-transform: all 0.1s;
+	-webkit-transform: all 0.1s;
 }
 
 /*NAVBAR/////////////////////////////////////////////////////////*/
@@ -132,6 +97,7 @@ hr{
 .divCollapse{
 	width: 120px;
 }
+
 /*HERO/////////////////////////////////////////////////////////*/
 .hero{
 	height: 100vh;
@@ -173,44 +139,18 @@ hr{
     border-radius: 20px;
 }
 
-/*CONTACT/////////////////////////////////////////////////////////*/
-.form-control {
-    border-width:1px !important;
+/*WHAT WE DO//////////////////////////////////////////////////*/
+.whatwedoLogos{
+    margin-top:250px;
 }
 
-.iconosFooter img{                
-    width: 30%;
-	height: 30%;	    
+.whatwedoLogos img{
+	margin-top: 20px;
+    height: 60px;
+    width: 194x;
 }
 
-.section-padding-contact .btn{
-    background-color: #226168;
-    border: 0;
-    border-radius: 14px;
-}
-
-input{
-    display: flex;
-    flex-grow: 1;
-}
-/*REDES SOCIALES/////////////////////////////////////////////////////////*/
-.marco{
-	position: fixed;
-	z-index: 9;
-}
-
-.rrssbutton:hover img{
-	opacity: 0.8;	
-	transform: scale(1.1);
-}
-
-.rrssbutton img{
-	transition: all 0.1s;	
-	-moz-transform: all 0.1s;
-	-webkit-transform: all 0.1s;
-}
-
-/*CURRENT PROJECTS*/
+/*PROJECTS//////////////////////////////////////////////////*/
 #currentProjects img{
     width: 150px;
     height: 150px;
@@ -230,7 +170,6 @@ input{
 	max-width: 1200px;
 }
 
-/*Raya central*/
 .timeline:after{
 	content: '';
 	position: absolute;
@@ -305,9 +244,93 @@ input{
 	.tpLeft{
 		text-align: left;
 	}
+	
+	.hero-inner{
+		margin-left:60px;
+		margin-right: 10px;
+	}
+	.hero h1{
+    	text-shadow:2px 2px #333;
+    	font-size: 4em;
+    	font-weight: bold;
+	}
+
+	.hero h2{
+		text-shadow:2px 2px #333;
+		font-weight: bold;
+	}
+
+	.hero h3{
+		text-shadow:2px 2px #333;
+		font-weight: bold;
+	}
 }
 
-/*FOOTER*/
+/*MEMBERS/////////////////////////////////////////////////////////*/
+.memberBoxImage {
+    position: relative;	
+}
+
+.memberBoxImage img{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.memberImgFormal {
+    z-index: 1;
+}
+
+.memberImgInformal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden; 
+}
+
+.memberBoxImage:hover .memberImgFormal {
+    visibility: hidden;
+}
+
+.memberBoxImage:hover .memberImgInformal {
+    visibility: visible;
+}
+
+.memberBoxDescription{
+    margin-top: 210px;
+    text-align: center;
+}
+
+.memberName{
+    font-weight: bold;
+}
+
+/*CONTACT/////////////////////////////////////////////////////////*/
+.form-control {
+    border-width:1px !important;
+}
+
+.iconosFooter img{                
+    width: 30%;
+	height: 30%;	    
+}
+
+.section-padding-contact .btn{
+    background-color: #226168;
+    border: 0;
+    border-radius: 14px;
+}
+
+input{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+/*FOOTER/////////////////////////////////////////////////////////*/
 .page-footer{
     background-color: #000000;
     color:white;
