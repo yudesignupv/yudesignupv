@@ -555,31 +555,55 @@
                     <p>yudesignupv@gmail.com</p>
                 </div>
                 <div class="col-sm-1 col-xs-12 m-auto">
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#provisionalPopup">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#sectionSuscription">
                         NEWSLETTER
                     </button>
                     
                 </div>
             </div>
         </div>
-		<div class="modal fade" id="provisionalPopup" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Coming soon</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="mod	al-body">
-                                    <p>Through this monthly newsletter, we will be keeping you updated with our new experiences, discoveries, achievements, as well as some curiosities and future workshops. Come back in a few days, it will be ready soon!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
     </footer>
     <!-- Footer -->
     
+	<!-- Subscription -->
+	<section class="suscription">
+		<div class="modal fade" id="sectionSuscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h1 class="modal-title">Subscription</h1> 
+						<form id="contactform" method="POST">
+							<div class="form-group mx-4 row">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-4">
+									<input type="text" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Your name" name="name">
+								</div>
+								<div class="col-sm-4"></div>
+							</div>
+							<div class="form-group mx-4 row">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-4">
+									<input type="email" class="form-control border-top-0 border-right-0 border-left-0" placeholder="Your email" name="_replyto">
+								</div>
+								<div class="col-sm-4"></div>
+							</div>
+							<button type="submit" class="btn btn-secondary btn-LearnMore" value="Send">Submit</button>	
+							<input type="hidden" name="_subject" value="New subscriber">
+						</form>
+						<script>
+							var contactform = document.getElementById('contactform');
+							contactform.setAttribute('action', '//formspree.io/' + 'yudesignupv' + '@' + 'gmail' + '.' + 'com');
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>

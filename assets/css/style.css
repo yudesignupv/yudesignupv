@@ -263,6 +263,7 @@ hr{
 		text-shadow:2px 2px #333;
 		font-weight: bold;
 	}
+	
 }
 
 /*MEMBERS/////////////////////////////////////////////////////////*/
@@ -335,6 +336,63 @@ input{
     color:white;
 }
 
+/*SUBSCRIPTION/////////////////////////////////////////////////////////*/
 .modal {
-    color:black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.modal-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: black;
+}
+
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: black; 
+}
+
+.modal-title{
+	margin-bottom: 150px;
+}
+.close {
+    color: #fff; 
+    opacity: 1;
+}
+
+.suscription .form-control {
+    border-width:1px !important;
+	border-color: white;
+	background-color: black;
+	color:white;
+}
+
+.suscription input{
+	text-align: center;
 }
