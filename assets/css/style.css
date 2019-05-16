@@ -77,7 +77,6 @@ hr{
 /*NAVBAR/////////////////////////////////////////////////////////*/
 .navbar{
     visibility: hidden;
-    color: blue; 
     z-index: 999;
 }
 
