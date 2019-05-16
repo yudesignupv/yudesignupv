@@ -266,10 +266,16 @@ hr{
 }
 
 /*EVENTS//////////////////////////////////////////////////*/
-.newEvent{
-	width: 228px;	
-	height: auto;
-}	
+#events h3{
+	font-weight: bold;
+}
+
+.btn-Inscription{
+	background-color: #E03E52;
+    /*background-color: #226168;*/
+    border: 0;
+    border-radius: 35px !important;
+}
 .pastEvents .card{
 	cursor: pointer;
 }
