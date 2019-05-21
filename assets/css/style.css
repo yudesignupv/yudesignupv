@@ -137,6 +137,11 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
 	margin-bottom: auto;
+	
+	display: flex;
+	justify-content: left;
+	align-items:flex-end;
+	
 }
 
 .whatwedoLogos{
@@ -150,11 +155,10 @@ hr{
 }
 
 .greenShape{
-	position: relative;
 	background-image: url("greenShape.png");
 	color: #fff;
 	margin-right: 0;
-	top: 400px;
+	margin-bottom: -20px;
 }
 
 .greenShape p{
@@ -254,8 +258,14 @@ hr{
 	.tpLeft{
 		text-align: left;
 	}
-
+	
+	.hero{
+		background-image: url("inicio1Mobile.jpeg");
+		align-items:flex-start;
+	}
+	
 	.hero-inner{
+		padding-top: 120px;
 		padding-left: 60px;
 	}
 	
