@@ -3,7 +3,8 @@ $(document).ready(function(){
         $('.firstpage').hide();
         $('.navbar').css("visibility","visible");
         $("body").css("overflow-y","visible");
-        });
+		$('#sectionSuscription').modal('show');
+	});
 });
 
 $(window).bind('beforeunload',function(){
