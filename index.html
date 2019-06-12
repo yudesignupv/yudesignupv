@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 	<!-- CSS propia -->
-	<link rel="stylesheet" href="assets/css/style.css">     
+	<link rel="stylesheet" href="assets/css/style.min.css">     
 	
 	<!-- Título e imagen pestaña -->
     <link rel="shortcut icon" href="assets/img/logopesta%C3%B1a.png">
@@ -656,7 +656,7 @@
                     <p>yudesignupv@gmail.com</p>
                 </div>
                 <div class="col-sm-1 col-xs-12 m-auto">
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#sectionSuscription">
+                    <button type="button" class="btn btn-Newsletter" data-toggle="modal" data-target="#newsletterPopUp">
                         NEWSLETTER
                     </button>
                     
@@ -666,7 +666,7 @@
     </footer>
     <!-- Footer -->
     
-	<!-- Suscription -->
+	<!-- Suscription --
 	<section class="suscription">
 		<div class="modal fade" id="sectionSuscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
@@ -708,7 +708,57 @@
 	</section>
 	<!-- /Suscription -->
 	
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- Newsletter -->
+	<section class="newsletter">
+		<div class="modal fade" id="newsletterPopUp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">						
+						<div class="container">
+							<button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="container mt-4">
+								<h2 id="newsletterTitle">Do not miss <b>anything</b> and enjoy of all <b>privileges!</b></h2>							
+							</div>
+							<div class="container mt-3 mr-4 ml-3">
+								<p>Suscribe to our newsletter and stay up to date with our proyects. You will have preference to enter all the workshops.</p>
+							</div>							
+						</div>
+					</div>	
+					<div class="modal-body">
+						<form id="subscriptionform" method="POST">
+							<div class="container">
+								<div class="row pb-3">
+									<div class="col ml-4 pl-2 pr-0">
+										<input type="text" class="form-control" placeholder="First name*" name="FirstName">								
+									</div>
+									<div class="col">
+										<input type="text" class="form-control" placeholder="Last name" name="LastName">							
+									</div>
+								</div>
+								<div class="row pb-3">
+									<div class="col">
+										<input type="email" class="form-control" placeholder="Email address*" name="_replyto">			
+									</div>									
+								</div>
+							</div>							
+							<input type="text" name="_gotcha" style="display:none">
+							<div class="text-right mr-3">
+                    			<button type="submit" class="btn btn-Newsletter" value="Send">¡Suscribe!</button>			
+                			</div>
+							<input type="hidden" name="_subject" value="New subscriber">
+						</form>
+						<script>
+							var contactform = document.getElementById('subscriptionform');
+							contactform.setAttribute('action', '//formspree.io/' + 'yudesignewsletter' + '@' + 'gmail' + '.' + 'com');
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Newsletter -->
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
