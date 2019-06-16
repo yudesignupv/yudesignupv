@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('.firstpage').hide();
         $('.navbar').css("visibility","visible");
         $("body").css("overflow-y","visible");
-		$('#newsletterPopUp').modal('show');
+		$('.newsletterPopUp').modal('show');
 	});
 });
 
