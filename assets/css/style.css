@@ -281,6 +281,10 @@ hr{
 		margin-right: 20px;
 		margin-left: 50px;
 	}
+	
+	.news{
+		margin-bottom: 20px;
+	}
 }
 
 /*EVENTS//////////////////////////////////////////////////*/
@@ -294,6 +298,24 @@ hr{
     border: 0;
     border-radius: 35px !important;
 }
+
+/*NEWS//////////////////////////////////////////////////*/
+
+.newsDiv{
+	margin-bottom: 50px;
+	margin-right: 200px;
+}
+
+.newsDiv h3{
+	font-weight: bold;	
+}
+
+.news{
+	width: 300px;
+	height: auto;
+}
+
+/*
 .pastEvents .card{
 	cursor: pointer;
 }
@@ -332,6 +354,7 @@ hr{
 .collapse h3{
 	font-weight: bold;
 }
+*/
 /*MEMBERS/////////////////////////////////////////////////////////*/
 .memberBoxImage {
     position: relative;	
@@ -415,6 +438,7 @@ input{
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
   	background: #E03E52;
+	padding-bottom: 50px;
 }
 
 .modal-body{
@@ -453,4 +477,11 @@ input{
 
 .btn-Newsletter:hover {
  	text-decoration: none;
+}
+
+.flecha{
+	position: absolute;
+	width: auto;
+	height: 50px;	
+	z-index: 1;
 }
