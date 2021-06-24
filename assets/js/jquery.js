@@ -5,6 +5,15 @@ $(document).ready(function(){
         $("body").css("overflow-y","visible");
 		$('.newsletterPopUp').modal('show');
 	});
+	
+     $(function() {
+	setTimeout(function() {
+	$(".firstpage").hide('blind', {}, 500);
+	$('.navbar').css("visibility","visible");
+	$("body").css("overflow-y","visible");
+	$('.newsletterPopUp').modal('show');
+	}, 7000);
+     });
 });
 
 $(window).bind('beforeunload',function(){
